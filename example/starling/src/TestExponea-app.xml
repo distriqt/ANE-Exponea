@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/30.0">
+	<id>com.distriqt.test</id>
+	<filename>TestExponea</filename>
+	<name>TestExponea</name>
+	<versionNumber>0.0.1</versionNumber>
+
+    <initialWindow>
+        <content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+        <autoOrients>true</autoOrients>
+        <fullScreen>false</fullScreen>
+        <visible>true</visible>
+        <renderMode>direct</renderMode>
+    </initialWindow>
+
+	<icon>
+        <image16x16>icons/icon16x16.png</image16x16>
+        <image29x29>icons/icon29x29.png</image29x29>
+        <image32x32>icons/icon32x32.png</image32x32>
+        <image36x36>icons/icon36x36.png</image36x36>
+        <image48x48>icons/icon48x48.png</image48x48>
+        <image57x57>icons/icon57x57.png</image57x57>
+        <image72x72>icons/icon72x72.png</image72x72>
+        <image76x76>icons/icon76x76.png</image76x76>
+        <image114x114>icons/icon114x114.png</image114x114>
+        <image120x120>icons/icon120x120.png</image120x120>
+        <image128x128>icons/icon128x128.png</image128x128>
+        <image152x152>icons/icon152x152.png</image152x152>
+        <image512x512>icons/icon512x512.png</image512x512>
+	</icon>
+
+	<iPhone>
+		<InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+
+			<key>NSAppTransportSecurity</key>
+			<dict>
+				<key>NSAllowsArbitraryLoads</key>
+	  			<true/>
+			</dict>
+			
+		]]></InfoAdditions>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+		<Entitlements>
+			<![CDATA[
+			]]>
+		</Entitlements>
+	</iPhone>
+	
+	<android>
+		<manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto" >
+				<uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+				<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+				<application android:allowBackup="true">
+
+				    <receiver
+                        android:name="com.infinario.android.infinariosdk.GcmBroadcastReceiver"
+                        android:permission="com.google.android.c2dm.permission.SEND" >
+                        <intent-filter>
+                            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                            <category android:name="com.example.gcm" />
+                        </intent-filter>
+                    </receiver>
+
+                    <receiver android:name="com.infinario.android.infinariosdk.ReferrerReceiver"
+                        android:exported="true" >
+                        <intent-filter>
+                            <action android:name="com.android.vending.INSTALL_REFERRER" />
+                        </intent-filter>
+                    </receiver>
+
+                    <service android:name="com.infinario.android.infinariosdk.GcmIntentService" />
+
+				</application>
+			</manifest>
+		]]></manifestAdditions>
+	</android>
+	
+	<extensions>
+		<extensionID>com.distriqt.Exponea</extensionID>
+		<extensionID>com.distriqt.Core</extensionID>
+		<extensionID>com.distriqt.playservices.Base</extensionID>
+		<extensionID>com.distriqt.playservices.Ads</extensionID>
+		<extensionID>com.distriqt.playservices.GCM</extensionID>
+	</extensions>
+	
+</application>
