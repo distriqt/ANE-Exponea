@@ -99,13 +99,15 @@ The Exponea ANE requires a few additions to the manifest. You should add the lis
 App Transport Security (ATS) is a privacy feature introduced in iOS 9. It's enabled 
 by default for new applications and enforces secure connections.
 
+> If you are using `https` for your instance you shouldn't need to add this addition.
+
 All iOS 9 or higher devices running apps that don't disable ATS will be affected by 
 this change. This may affect your app's integration with the Google Mobile Ads SDK.
 
 The following log message appears when a non-ATS compliant app attempts to serve an 
 ad via HTTP on iOS 9+:
 
-> App Transport Security has blocked a cleartext HTTP (http://) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
+> App Transport Security has blocked a cleartext HTTP (`http://`) resource load since it is insecure. Temporary exceptions can be configured via your app's Info.plist file.
 
 To ensure you are not impacted by ATS, add the following to the `InfoAdditions`
 node in your `iPhone` settings of your application descriptor:
@@ -118,5 +120,19 @@ node in your `iPhone` settings of your application descriptor:
 </dict>
 ```
 
-If you are using `https` for your instance you won't need to add this addition.
+
+### Dynamic Framework
+
+Exponea utilises a dynamic framework which means some additional files need to be packaged with your application.
+The dynamic framework must be packaged with your application in a particular location as outlined below. Additionally we highly recommend using AIR SDK version 30 or higher due to some additions making working with dynamic frameworks easier in that release.
+
+Firstly you need to create a `Frameworks` directory at the root level of your application. This is the directory that must contain all the dynamic frameworks and libraries required by your application. In this case we just need to add the `ExponeaSDK.framework`. You can find this in the repository alongside the `ane` file.
+
+>
+> If your application is crashing on launch most likely it will be due to incorrectly adding the framework or naming/location of the `Frameworks` directory. You can check the logs for error messages relating the the dynamic framework.
+>
+
+
+
+
 
