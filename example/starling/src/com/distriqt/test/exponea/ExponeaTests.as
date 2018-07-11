@@ -56,8 +56,11 @@ package com.distriqt.test.exponea
 				if (Exponea.isSupported)
 				{
 					log( "Exponea Version:   " + Exponea.instance.version );
-				}
 				
+					log( "getCPUFrequency:  " + Exponea.instance.getCPUFrequency() );
+					log( "getNumberOfCores: " + Exponea.instance.getNumberOfCores() );
+					log( "getTotalRAM:      " + Exponea.instance.getTotalRAM() );
+				}
 			}
 			catch (e:Error)
 			{
@@ -129,6 +132,7 @@ package com.distriqt.test.exponea
 			log( "sessionEnd()" );
 			Exponea.instance.trackSessionEnd();
 		}
+		
 		
 	}
 }
