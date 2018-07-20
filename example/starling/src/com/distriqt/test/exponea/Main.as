@@ -106,6 +106,13 @@ package com.distriqt.test.exponea
 			addAction( "Start :Session", _tests.sessionStart );
 			addAction( "End :Session", _tests.sessionEnd );
 			
+			addAction( "Track Google Purchase", _tests.trackGooglePurchase );
+			addAction( "Track Virtual Payment", _tests.trackVirtualPayment );
+			addAction( "Get Current Segment", _tests.getCurrentSegment );
+			addAction( "Disable Automatic Flushing", _tests.disableAutomaticFlushing );
+			addAction( "Flush", _tests.flush );
+			
+			
 			addChild( _text );
 			addChild( _container );
 		}

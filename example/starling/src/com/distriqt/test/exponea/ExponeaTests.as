@@ -15,6 +15,8 @@
 package com.distriqt.test.exponea
 {
 	import com.distriqt.extension.exponea.Exponea;
+	import com.distriqt.extension.exponea.Purchase;
+	import com.distriqt.extension.exponea.events.ExponeaEvent;
 	
 	import flash.display.Bitmap;
 	import flash.filesystem.File;
@@ -132,6 +134,83 @@ package com.distriqt.test.exponea
 			log( "sessionEnd()" );
 			Exponea.instance.trackSessionEnd();
 		}
+		
+		
+		//
+		//	PURCHASES
+		//
+		
+		
+		public function trackGooglePurchase():void
+		{
+			log( "trackGooglePurchase()" );
+			var purchase:Purchase = new Purchase()
+					.setProductId( "com.distriqt.test.awesomeproduct1" )
+					.setPurchaseTime( new Date().time )
+					.setPurchaseToken( "XXXXXXAAAAAA" );
+			
+			Exponea.instance.trackGooglePurchase( purchase );
+		}
+		
+		public function trackVirtualPayment():void
+		{
+			log( "trackVirtualPayment()" );
+			
+			var currency:String = "USD";
+			var amount:int = 100;
+			var itemName:String = "awesome product";
+			var itemType:String = "something";
+			
+			Exponea.instance.trackVirtualPayment( currency, amount, itemName, itemType );
+		}
+		
+		
+		//
+		//	SEGMENT
+		//
+		
+		public function getCurrentSegment():void
+		{
+			log( "getCurrentSegment" );
+		
+			Exponea.instance.addEventListener( ExponeaEvent.GET_CURRENT_SEGMENT_SUCCESS, getCurrentSegmentHandler );
+			Exponea.instance.addEventListener( ExponeaEvent.GET_CURRENT_SEGMENT_ERROR, getCurrentSegmentHandler );
+			
+			var segmentationId:String = "some_id";
+			var projectSecretToken:String = "secret_token";
+			
+			Exponea.instance.getCurrentSegment( segmentationId, projectSecretToken );
+		}
+		
+		private function getCurrentSegmentHandler( event:ExponeaEvent ):void
+		{
+			log( "getCurrentSegmentHandler: " + event.type );
+			log( "   segment: " + event.segment );
+			log( "   error: " + event.message);
+		
+			Exponea.instance.removeEventListener( ExponeaEvent.GET_CURRENT_SEGMENT_SUCCESS, getCurrentSegmentHandler );
+			Exponea.instance.removeEventListener( ExponeaEvent.GET_CURRENT_SEGMENT_ERROR, getCurrentSegmentHandler );
+		}
+		
+		
+		
+		//
+		//	FLUSHING
+		//
+		
+		public function disableAutomaticFlushing():void
+		{
+			log( "disableAutomaticFlushing" );
+			Exponea.instance.disableAutomaticFlushing();
+		}
+		
+		public function flush():void
+		{
+			log( "flush" );
+			Exponea.instance.flush();
+		}
+		
+		
 		
 		
 	}
