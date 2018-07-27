@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'Exponea' target in the 'Exponea' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
+#import "DTEXPTag.h"
+#endif

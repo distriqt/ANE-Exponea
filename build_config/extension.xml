@@ -1,0 +1,37 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+	<id>com.distriqt.Exponea</id>
+	<versionNumber>@VERSION@</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.exponea.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.exponea.ExponeaExtension</initializer>
+				<finalizer>com.distriqt.extension.exponea.ExponeaExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>distriqt.extension.exponea.android.jar</nativeLibrary>
+				<initializer>com.distriqt.extension.exponea.ExponeaExtension</initializer>
+				<finalizer>com.distriqt.extension.exponea.ExponeaExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libExponea.a</nativeLibrary>
+				<initializer>ExponeaExtInitializer</initializer>
+				<finalizer>ExponeaExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-x86">
+			<applicationDeployment>
+				<nativeLibrary>libExponea.a</nativeLibrary>
+				<initializer>ExponeaExtInitializer</initializer>
+				<finalizer>ExponeaExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default"> 
+			<applicationDeployment /> 
+		</platform>
+	</platforms>
+</extension>

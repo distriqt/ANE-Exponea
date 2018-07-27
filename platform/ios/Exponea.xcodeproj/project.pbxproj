@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3244A9C1FAC0B8700EB5924 /* DTEXPController.h in Headers */ = {isa = PBXBuildFile; fileRef = E3244A9A1FAC0B8700EB5924 /* DTEXPController.h */; };
+		E3244A9D1FAC0B8700EB5924 /* DTEXPController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3244A9B1FAC0B8700EB5924 /* DTEXPController.m */; };
+		E33625372101E2CE008D8788 /* DTEXPExponeaEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E33625352101E2CE008D8788 /* DTEXPExponeaEvent.h */; };
+		E33625382101E2CE008D8788 /* DTEXPExponeaEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E33625362101E2CE008D8788 /* DTEXPExponeaEvent.m */; };
+		E33ED8AA1BBD15AE00D23A8C /* DTEXPExtensionContextDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E33ED8A91BBD15AE00D23A8C /* DTEXPExtensionContextDelegate.h */; };
+		E34D85B31BB0D81B000DA3F9 /* DTEXPTag.h in Headers */ = {isa = PBXBuildFile; fileRef = E34D85B21BB0D81B000DA3F9 /* DTEXPTag.h */; };
+		E34D85BA1BB0D88D000DA3F9 /* DTEXPExtensionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E34D85B81BB0D88D000DA3F9 /* DTEXPExtensionContext.h */; };
+		E34D85BB1BB0D88D000DA3F9 /* DTEXPExtensionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E34D85B91BB0D88D000DA3F9 /* DTEXPExtensionContext.m */; };
+		E3BB1F5720EA081600051AC7 /* ExponeaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BB1F5620EA081600051AC7 /* ExponeaSDK.framework */; };
+		E3F4A7B6153D8C110057A446 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F4A7B5153D8C110057A446 /* Foundation.framework */; };
+		E3F4A7BC153D8C110057A446 /* Exponea.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A7BB153D8C110057A446 /* Exponea.m */; };
+		E3F4A7C3153D8C4A0057A446 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F4A7C2153D8C4A0057A446 /* FlashRuntimeExtensions.h */; };
+		E3FD7C821898742800881968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33692DA17CF44850021F35A /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E3244A9A1FAC0B8700EB5924 /* DTEXPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTEXPController.h; sourceTree = "<group>"; };
+		E3244A9B1FAC0B8700EB5924 /* DTEXPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTEXPController.m; sourceTree = "<group>"; };
+		E33625352101E2CE008D8788 /* DTEXPExponeaEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTEXPExponeaEvent.h; sourceTree = "<group>"; };
+		E33625362101E2CE008D8788 /* DTEXPExponeaEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTEXPExponeaEvent.m; sourceTree = "<group>"; };
+		E33692DA17CF44850021F35A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E33ED8A91BBD15AE00D23A8C /* DTEXPExtensionContextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTEXPExtensionContextDelegate.h; sourceTree = "<group>"; };
+		E34D85B21BB0D81B000DA3F9 /* DTEXPTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTEXPTag.h; sourceTree = "<group>"; };
+		E34D85B81BB0D88D000DA3F9 /* DTEXPExtensionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTEXPExtensionContext.h; sourceTree = "<group>"; };
+		E34D85B91BB0D88D000DA3F9 /* DTEXPExtensionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTEXPExtensionContext.m; sourceTree = "<group>"; };
+		E3BB1F5620EA081600051AC7 /* ExponeaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExponeaSDK.framework; path = Exponea/ExponeaSDK.framework; sourceTree = "<group>"; };
+		E3F4A7B2153D8C110057A446 /* libExponea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExponea.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F4A7B5153D8C110057A446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3F4A7B9153D8C110057A446 /* Exponea-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exponea-Prefix.pch"; sourceTree = "<group>"; };
+		E3F4A7BB153D8C110057A446 /* Exponea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exponea.m; sourceTree = "<group>"; };
+		E3F4A7C2153D8C4A0057A446 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3F4A7AF153D8C110057A446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3BB1F5720EA081600051AC7 /* ExponeaSDK.framework in Frameworks */,
+				E3FD7C821898742800881968 /* UIKit.framework in Frameworks */,
+				E3F4A7B6153D8C110057A446 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3244A991FAC0B8700EB5924 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3244A9A1FAC0B8700EB5924 /* DTEXPController.h */,
+				E3244A9B1FAC0B8700EB5924 /* DTEXPController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E33625342101E2C0008D8788 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				E33625352101E2CE008D8788 /* DTEXPExponeaEvent.h */,
+				E33625362101E2CE008D8788 /* DTEXPExponeaEvent.m */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		E3F4A7A7153D8C110057A446 = {
+			isa = PBXGroup;
+			children = (
+				E3F4A7B7153D8C110057A446 /* Exponea */,
+				E3F4A7B4153D8C110057A446 /* Frameworks */,
+				E3F4A7B3153D8C110057A446 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3F4A7B3153D8C110057A446 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3F4A7B2153D8C110057A446 /* libExponea.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3F4A7B4153D8C110057A446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3BB1F5620EA081600051AC7 /* ExponeaSDK.framework */,
+				E33692DA17CF44850021F35A /* UIKit.framework */,
+				E3F4A7B5153D8C110057A446 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3F4A7B7153D8C110057A446 /* Exponea */ = {
+			isa = PBXGroup;
+			children = (
+				E3F4A7BB153D8C110057A446 /* Exponea.m */,
+				E33625342101E2C0008D8788 /* events */,
+				E3244A991FAC0B8700EB5924 /* controller */,
+				E3F4A7B8153D8C110057A446 /* Supporting Files */,
+				E34D85B81BB0D88D000DA3F9 /* DTEXPExtensionContext.h */,
+				E34D85B91BB0D88D000DA3F9 /* DTEXPExtensionContext.m */,
+				E33ED8A91BBD15AE00D23A8C /* DTEXPExtensionContextDelegate.h */,
+			);
+			path = Exponea;
+			sourceTree = "<group>";
+		};
+		E3F4A7B8153D8C110057A446 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E34D85B21BB0D81B000DA3F9 /* DTEXPTag.h */,
+				E3F4A7C2153D8C4A0057A446 /* FlashRuntimeExtensions.h */,
+				E3F4A7B9153D8C110057A446 /* Exponea-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E3F4A7B0153D8C110057A446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34D85BA1BB0D88D000DA3F9 /* DTEXPExtensionContext.h in Headers */,
+				E3244A9C1FAC0B8700EB5924 /* DTEXPController.h in Headers */,
+				E33625372101E2CE008D8788 /* DTEXPExponeaEvent.h in Headers */,
+				E3F4A7C3153D8C4A0057A446 /* FlashRuntimeExtensions.h in Headers */,
+				E33ED8AA1BBD15AE00D23A8C /* DTEXPExtensionContextDelegate.h in Headers */,
+				E34D85B31BB0D81B000DA3F9 /* DTEXPTag.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E3F4A7B1153D8C110057A446 /* Exponea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F4A7BF153D8C110057A446 /* Build configuration list for PBXNativeTarget "Exponea" */;
+			buildPhases = (
+				E3F4A7AE153D8C110057A446 /* Sources */,
+				E3F4A7AF153D8C110057A446 /* Frameworks */,
+				E3F4A7B0153D8C110057A446 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exponea;
+			productName = Exponea;
+			productReference = E3F4A7B2153D8C110057A446 /* libExponea.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3F4A7A9153D8C110057A446 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = distriqt;
+			};
+			buildConfigurationList = E3F4A7AC153D8C110057A446 /* Build configuration list for PBXProject "Exponea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E3F4A7A7153D8C110057A446;
+			productRefGroup = E3F4A7B3153D8C110057A446 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3F4A7B1153D8C110057A446 /* Exponea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3F4A7AE153D8C110057A446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F4A7BC153D8C110057A446 /* Exponea.m in Sources */,
+				E33625382101E2CE008D8788 /* DTEXPExponeaEvent.m in Sources */,
+				E34D85BB1BB0D88D000DA3F9 /* DTEXPExtensionContext.m in Sources */,
+				E3244A9D1FAC0B8700EB5924 /* DTEXPController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E3F4A7BD153D8C110057A446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E3F4A7BE153D8C110057A446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3F4A7C0153D8C110057A446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Exponea.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/marchbold/work/distriqt/extensions/supportlibs/corelibraries/platform/ios/build/Release-iphoneos",
+					"$(PROJECT_DIR)/Exponea",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exponea/Exponea-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3F4A7C1153D8C110057A446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Exponea.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/marchbold/work/distriqt/extensions/supportlibs/corelibraries/platform/ios/build/Release-iphoneos",
+					"$(PROJECT_DIR)/Exponea",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exponea/Exponea-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3F4A7AC153D8C110057A446 /* Build configuration list for PBXProject "Exponea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F4A7BD153D8C110057A446 /* Debug */,
+				E3F4A7BE153D8C110057A446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F4A7BF153D8C110057A446 /* Build configuration list for PBXNativeTarget "Exponea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F4A7C0153D8C110057A446 /* Debug */,
+				E3F4A7C1153D8C110057A446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3F4A7A9153D8C110057A446 /* Project object */;
+}

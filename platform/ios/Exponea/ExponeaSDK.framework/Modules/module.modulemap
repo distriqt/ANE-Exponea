@@ -1,0 +1,6 @@
+framework module ExponeaSDK {
+  umbrella header "ExponeaSDK.h"
+
+  export *
+  module * { export * }
+}

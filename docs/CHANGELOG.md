@@ -1,5 +1,12 @@
 
 
+###### 2018.07.28 [v1.0.025]
+
+```
+Corrected default timestamp on track function
+```
+
+
 ###### 2018.07.20 [v1.0.022]
 
 ```
