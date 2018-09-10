@@ -1,5 +1,12 @@
 
 
+###### 2018.09.11 [v1.0.030]
+
+```
+Rebuilt ANE with release framework version (#2)
+```
+
+
 ###### 2018.09.10 [v1.0.029]
 
 ```
